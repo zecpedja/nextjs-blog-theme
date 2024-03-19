@@ -44,3 +44,7 @@
   filter: blur(44px);
   z-index: -1;
 }
+
+.flex-grow {
+  margin-left: 250px; /* Adjust based on your Sidebar's width */
+}

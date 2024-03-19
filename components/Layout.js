@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import { useEffect } from 'react';
 import styles from './Layout.module.css';
+import Sidebar from "./Sidebar";
 
 export function GradientBackground({ variant, className }) {
   const classes = classNames(
@@ -50,10 +51,12 @@ export default function Layout({ children }) {
   }, []);
 
   return (
-    <div className="relative pb-24 overflow-hidden">
-      <div className="flex flex-col items-center max-w-2xl w-full mx-auto">
-        {children}
+      <div className="flex">
+        <Sidebar/>
+        <main className="flex-1 ml-64"> {/* Adjust the margin-left (ml-64) as needed based on your sidebar width */}
+          {children}
+        </main>
       </div>
-    </div>
   );
+
 }

@@ -1,0 +1,37 @@
+/* Sidebar.module.css */
+
+.sidebar {
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: #FFFFFF;
+    padding: 20px;
+    min-height: 100vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 2px solid #0D0D0D;
+}
+
+.sidebarList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; /* Adjusts spacing from top */
+}
+
+.sidebarItem {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.sidebarItem:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Optional: Style for active state or specific sidebar items */
+.sidebarItem.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
